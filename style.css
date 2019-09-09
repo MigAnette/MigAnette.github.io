@@ -1,8 +1,33 @@
+body {
+    display: grid;
+}
+
+.container {
+    width: 900px;
+    justify-self: center;
+}   
+
 nav {
     border: 1px solid black;
 }
 
+nav ul li {
+    list-style-type: none;
+    float: left;
+    margin-left: 0.5vw;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 12;
+}
+
 .intro {
-    border: 1px solid black;
-    height: 200px;
+    grid-column: 3/11;
+    grid-row: 1;
+}
+
+.overview {
+    grid-column: 1/3;
+    grid-row: 1;
 }
